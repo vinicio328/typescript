@@ -7,3 +7,5 @@ function log(message)
 var message = "Hello World";
 
 log(message);
+
+
