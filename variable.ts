@@ -38,6 +38,16 @@ enum Color
 
 let backgroundColor = Color.Blue;
 
+let message = 'abc';
+let check = message.endsWith('c');
+
+// type assertions
+let message2;
+message2 = 'abc';
+let check2 = (<string>message2).endsWith('c');
+let alternateAssertCheck = (message2 as string).endsWith('c');
+
+
 
 
 

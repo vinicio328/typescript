@@ -5,7 +5,7 @@ function doSomething() {
     console.log('Finally: ' + i);
 }
 function doSomething2() {
-    for (var i = 0; i < 5; i++) {
+    for (let i = 0; i < 5; i++) {
         console.log(i);
     }
     //console.log('Finally: ' + i);
@@ -13,16 +13,16 @@ function doSomething2() {
 doSomething();
 doSomething2();
 // primitive types
-var a;
-var b;
-var c;
-var d;
-var e = [1, 2, 3];
-var f = [1, true, 'e', false];
+let a;
+let b;
+let c;
+let d;
+let e = [1, 2, 3];
+let f = [1, true, 'e', false];
 // old js, whithout enums
-var ColorRed = 0;
-var ColorGreen = 1;
-var ColorBlue = 2;
+const ColorRed = 0;
+const ColorGreen = 1;
+const ColorBlue = 2;
 // enums
 var Color;
 (function (Color) {
@@ -31,4 +31,11 @@ var Color;
     Color[Color["Blue"] = 2] = "Blue";
 })(Color || (Color = {}));
 ;
-var backgroundColor = Color.Blue;
+let backgroundColor = Color.Blue;
+let message = 'abc';
+let check = message.endsWith('c');
+// type assertions
+let message2;
+message2 = 'abc';
+let check2 = message2.endsWith('c');
+let alternateAssertCheck = message2.endsWith('c');
