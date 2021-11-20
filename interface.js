@@ -1,8 +1,7 @@
-// first version
-var drawPoint = function (point) {
-    //..
-};
-drawPoint({
-    x: 1,
-    y: 2
-});
+var Point = /** @class */ (function () {
+    function Point() {
+    }
+    Point.prototype.drawX = function () {
+    };
+    return Point;
+}());

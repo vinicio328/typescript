@@ -1,19 +1,27 @@
-interface Point {
+interface IPoint {
     x: number,
-    y: number
+    y: number,
+    draw: () => void;    
 }
 
-// first version
-let drawPoint = (point: Point) => {
-    //..
-}
-
-drawPoint(
+class Point implements IPoint 
+{
+    x: number;
+    y: number;
+    
+    draw: () =>
     {
-        x: 1,
-        y: 2
+
     }
-)
+
+    getDistance: (another: Point) =>
+    {
+
+    }
+
+}
+
+
 
 
 
