@@ -1,6 +1,6 @@
 interface IPoint {
-    x: number,
-    y: number,
+    x: number;
+    y: number;
     draw: () => void;    
 }
 
@@ -9,9 +9,9 @@ class Point implements IPoint
     x: number;
     y: number;
     
-    draw: () =>
+    draw() 
     {
-
+        console.log('X:' + this.x + ', Y:' + this.y);
     }
 
     getDistance: (another: Point) =>
@@ -23,6 +23,7 @@ class Point implements IPoint
 
 
 
-
+let aPoint: Point = new Point();
+aPoint.draw();
 
 
